@@ -70,3 +70,13 @@ This command decompresses the backup and recreates the database with all the col
 
 ### ✅ Step 3: Verification  
 After the restoration is completed, the script verifies the process by checking the number of documents restored which ensures that the database has been successfully recovered.  
+
+# Key Takeaways
+
+- Gained hands-on experience in **building and querying databases on MongoDB**.
+
+- Developed **automation scripts for EC2 instances** and scheduled recurring tasks using **cron jobs**.
+
+- Followed **production-grade security practices** by avoiding hardcoding passwords and usernames, instead leveraging **AWS Secrets Manager** to securely inject credentials into scripts.
+
+- Strengthened understanding of **S3 bucket management**, designing **IAM policies for least-privilege access**, and implementing **security best practices** for cloud resources.

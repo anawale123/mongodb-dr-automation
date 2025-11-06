@@ -36,7 +36,7 @@ After ensuring that the backup pipeline was working reliably, I focused on devel
 
 ---
 
-## 🔄 Backup Workflow  
+##  Backup Workflow  
 
 1. The EC2 instance retrieves MongoDB credentials securely from AWS Secrets Manager.  
 2. The script runs `mongodump` to export the database into a compressed `.gz` archive.  
@@ -55,7 +55,7 @@ aws s3 cp backup_*.gz s3://mongo-db-database/mongodb-backups/
 
 ---
 
-## ♻️ Restore Workflow  
+##  Restore Workflow  
 
 In the event of an accidental data deletion or corruption, this automated restore script retrieves the latest backup from Amazon S3 and restores it to MongoDB Atlas
 
@@ -69,7 +69,7 @@ aws s3 cp s3://mongo-db-database/mongodb-backups/$latest_backup ./restore/
 
 ---
 
-### ♻️ Step 2: Restoring the Backup to MongoDB Atlas  
+###  Step 2: Restoring the Backup to MongoDB Atlas  
 Once the backup file is downloaded, the `mongorestore` command is used to restore it into MongoDB Atlas:  
 
 ```bash
@@ -80,7 +80,7 @@ This command decompresses the archive and restores all collections and documents
 
 ---
 
-### ✅ Step 3: Verification  
+###  Step 3: Verification  
 After restoration, the script verifies the integrity of the recovery by comparing the number of documents in each collection before and after restoration that ensures no data was lost in the process.
 
 ---
@@ -108,7 +108,7 @@ After restoration, the script verifies the integrity of the recovery by comparin
 </p>
 
 
-## 🧩 Key Takeaways  
+##  Key Takeaways  
 
 - Gained hands-on experience in **building and querying databases using MongoDB**  
 - Developed **automation scripts** for EC2 and scheduled recurring tasks with **cron jobs**  

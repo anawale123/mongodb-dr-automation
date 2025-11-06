@@ -26,7 +26,7 @@ To prevent future data loss, I designed and implemented a fully automated backup
 
 ##  Implementation Approach  
 
-To tackle this scenario, I utilized the tools and services listed above to build a complete, automated backup and restore system.  
+To tackle this scenario, I utilised the tools and services as listed above to build a complete, automated backup and restore system.  
 
 I began by creating a script on my EC2 instance that performs database backups every six hours to minimize data loss. For automation, I configured cron jobs to trigger backups at fixed intervals.  
 

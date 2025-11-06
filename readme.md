@@ -8,7 +8,7 @@ Management is furious. Your task: build an automated, production-grade backup so
 
 ##  Project Overview  
 This project simulates a real-world disaster recovery scenario where a production MongoDB database was accidentally deleted.  
-To prevent future data loss, I designed and implemented a fully automated backup and restore pipeline using AWS services and MongoDB tools — built with production-grade security, automation, and reliability in mind.
+To prevent future data loss, I designed and implemented a fully automated backup and restore pipeline using AWS services and MongoDB tools which are built with production-grade security, automation, and reliability in mind.
 
 ---
 
@@ -32,7 +32,7 @@ I began by creating a script on my EC2 instance that performs database backups e
 
 The script uses the `mongodump` command to export the database into a compressed `.gz` file, which is then automatically uploaded to an Amazon S3 bucket for secure storage. Each backup file is timestamped and can be easily retrieved from the AWS Management Console when needed.  
 
-After ensuring that the backup pipeline was working reliably, I focused on developing the **restore and verification processes** — allowing the system to automatically recover the database and confirm that the data restoration was successful.
+After ensuring that the backup pipeline was working reliably, I focused on developing the **restore and verification processes** allowing the system to automatically recover the database and confirm that the data restoration was successful.
 
 ---
 
